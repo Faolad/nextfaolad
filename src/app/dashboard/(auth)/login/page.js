@@ -8,23 +8,23 @@ const Login = ()=>{
     const session = useSession();
     const router = useRouter();
 
-    // useEffect(() => {
-    //   if (session?.status === "authenticated") {
-    //     router?.push("/dashboard");
-    //   }
-    // }, [session, router]);
+    useEffect(() => {
+      if (session?.status === "authenticated") {
+        router?.push("/dashboard");
+      }
+    }, [session, router]);
   
-    // if (session?.status === "loading") {
-    //   return <p>Loading</p>;
+    if (session?.status === "loading") {
+      return <p>Loading</p>;
+    }
+
+    // if(session.status === "loading"){
+    //   return <p>Loading</p>
     // }
 
-    if(session.status === "loading"){
-      return <p>Loading</p>
-    }
-
-    if(session.status === "authenticated"){
-      router.push("/dashboard")
-    }
+    // if(session.status === "authenticated"){
+    //   router.push("/dashboard")
+    // }
     
 
     

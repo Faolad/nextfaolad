@@ -5,7 +5,7 @@ import GoogleProvider from "next-auth/providers/google"
 import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from 'bcrypt'
 
-export const authOptions = {
+const handler = NextAuth ({
   // Configure one or more authentication providers
   providers: [
     GoogleProvider({
@@ -44,7 +44,6 @@ export const authOptions = {
   pages:{
     error: "/dashboard/login"
   }
-}
+})
 
-const handler = NextAuth(authOptions)
 export {handler as GET, handler as POST}

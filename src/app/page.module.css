@@ -1,0 +1,19 @@
+.head_text {
+    background: linear-gradient(to bottom, rgb(46, 205, 46), rgb(135, 135, 135));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.image {
+    object-fit: contain;
+    animation: move 3s infinite ease alternate;
+  }
+  
+  @keyframes move {
+    from {
+      transform: translateY(-10px);
+    }
+    to {
+      transform: translateY(10px);
+    }
+  }

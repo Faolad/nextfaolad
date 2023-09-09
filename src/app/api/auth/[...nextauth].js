@@ -40,7 +40,11 @@ const handler = NextAuth ({
     }),
     // ...add more providers here
     
+    
   ],
+  pages: {
+    error: "/dashboard/login",
+  },
   
 })
 

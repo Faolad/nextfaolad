@@ -41,9 +41,7 @@ const handler = NextAuth ({
     // ...add more providers here
     
   ],
-  pages:{
-    error: "/dashboard/login"
-  }
+  
 })
 
 export {handler as GET, handler as POST}

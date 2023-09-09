@@ -34,7 +34,6 @@ const Login = ()=>{
       e.preventDefault();
       const email = e.target[0].value
       const password = e.target[1].value
-
       signIn("credentials", {email, password})
     }
 
@@ -46,7 +45,6 @@ const Login = ()=>{
               <input type='email' placeholder='email' required className=' p-5 bg-transparent border-4 rounded-md text-xl font-bold' />
               <input type='password' placeholder='password'  required className=' p-5 bg-transparent border-4  rounded-md text-xl font-bold' />
               <button className=' p-5 cursor-pointer bg-green-400 rounded-md w-72 text-white'>Login</button>
-          
             </form>
 
             <button onClick={()=>signIn("google")}>

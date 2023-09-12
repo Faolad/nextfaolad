@@ -2,7 +2,7 @@
 import { signIn, useSession } from "next-auth/react"
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
-
+import Link from "next/link";
 
 const Login = ()=>{
     const session = useSession();
@@ -50,6 +50,7 @@ const Login = ()=>{
             <button onClick={()=>signIn("google")}>
               Log in with google
             </button>
+            <Link href="/dashboard/register">Dont have account yet? Register here</Link>
           </div>
         
         </div>

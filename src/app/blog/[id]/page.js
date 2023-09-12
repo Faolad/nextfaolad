@@ -26,7 +26,7 @@ const BlogPost = async ({params})=>{
     return (
         <div className="">
           <div className="flex mb-24 mt-0">
-            <div className="flex-1 flex flex-col justify-between">
+            <div className="flex-1 flex flex-col justify-center">
               <h1 className="font-bold">{data.title}</h1> 
               <p>{data.desc}</p> 
               <div className="flex items-center">
